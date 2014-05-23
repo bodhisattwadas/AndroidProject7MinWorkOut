@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_green_header_footer">#29966C</color>
+    <color name="start_button_border_color">#76DF87</color>
+    <color name="round_status_color">#03EBC0</color>
+    <color name="footer_button_pressed">#49A682</color>
+    <color name="bgcolor_gray">#F1F4F5</color>
+    <color name="gray_black">#2F3949</color>
+    <color name="light_green">#4DB38C</color>
+    
+</resources>

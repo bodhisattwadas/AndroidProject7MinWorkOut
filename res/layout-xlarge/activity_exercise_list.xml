@@ -1,0 +1,645 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F4F5"
+    tools:context=".ExerciseList" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/deep_green_header_footer"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/normal_question_mark" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:src="@drawable/normal_lock" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/normal_exercise_list" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/normal_back" />
+    </RelativeLayout>
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/deep_green_header_footer"
+        android:gravity="center"
+        android:weightSum="1" >
+
+        <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:layout_weight="0.25" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/learn"
+        android:layout_weight="0.25" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logs"
+        android:layout_weight="0.25" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:layout_weight="0.25" />
+
+    </LinearLayout>
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/linearLayout1"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/relativeLayout1" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+             
+             <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName1"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName2"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:adjustViewBounds="true"
+                android:src="@drawable/im3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName3"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription2"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName4"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription2"/>
+
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName5"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription5"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName6"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription6" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im7" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName7"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription7"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im8" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName8"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription8" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName9"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription9" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+               style="@style/normal_list_view_image"
+                android:src="@drawable/im10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName10"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription10"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im11" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName11"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                   style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription11"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                style="@style/normal_list_view_image"
+                android:src="@drawable/im12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exName12"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/normal_list_view_short_description"
+                    android:text="@string/shortDescription12"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/more"
+                    android:textColor="@color/deep_green_header_footer"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            
+        </TableRow>
+    </TableLayout>
+
+             
+         </LinearLayout>
+     </ScrollView>
+
+    </RelativeLayout>

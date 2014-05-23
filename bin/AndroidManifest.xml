@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.minworkout"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.minworkout.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.minworkout.ExerciseList"
+            android:label="@string/title_activity_exercise_list" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.ExDescription"
+            android:label="@string/title_activity_ex_description" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.Exercise"
+            android:label="@string/title_activity_exercise" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.ExerciseComplete"
+            android:label="@string/title_activity_exercise_complete" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.VoiceOver"
+            android:label="@string/title_activity_voice_over" >
+        </activity>
+        <activity
+            android:name="com.example.minworkout.Logs"
+            android:label="@string/title_activity_logs" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">7MinWorkOut</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="home">HOME</string>
+    <string name="learn">LEARN</string>
+    <string name="logs">LOGS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="str1">30 secs \nExercise time</string>
+    <string name="str2">1 \nSets</string>
+    <string name="str3">10secs \nRest time</string>
+    <string name="title_activity_exercise_list">ExerciseList</string>
+    <string name="more">More ></string>
+    <string name="exName1">1. JUMPING JACKS</string>
+    <string name="exName2">2. WALL SITS</string>
+    <string name="exName3">3. PUSH-UPS</string>
+    <string name="exName4">4. ABDOMINAL CRUNCHES</string>
+    <string name="exName5">5. STEP-UP ONTO CHAIR</string>
+    <string name="exName6">6. SQUATS</string>
+    <string name="exName7">7. TRICEPS DIP ON CHAIR</string>
+    <string name="exName8">8. PLANKS</string>
+    <string name="exName9">9. HIGH KNEES RUNNING</string>
+    <string name="exName10">10. LUNGES</string>
+    <string name="exName11">11. PUSH-UP AND ROTATION</string>
+    <string name="exName12">12. SIDE PLANKS</string>
+    <string name="shortDescription1">Jumping Jacks are a basic structural workout and this
+    exercise is beneficial for heart and lungs.</string>
+    <string name="shortDescription2">The wall sit is a bit different from typical squalts since you\'re 
+    holding a static position for a certain period of time.</string>
+    <string name="shortDescription3">A basic push up is an effective way 
+    strengthen the chest and arm muscles, and can be easily scaled as you 
+    get stronger.</string>
+    <string name="shortDescription4">They\'re a lot like sit-ups,except that instead of lifting your entire back off the floor,you only lift your upper back.</string>
+    <string name="shortDescription5">Step exercises are ideal for building muscle in your lower body.At the same time,they burn calories for weight control.</string>
+    <string name="shortDescription6">The squat is an excellent upper and lower body workout that primarlly targets your thighs and butt.</string>
+    <string name="shortDescription7">This medium-intensity exercise uses your own body weight to strengthen your triceps.</string>
+    <string name="shortDescription8">The plank ia a balance and core conditioning exercise.In yoga,the plank is often done as part of the sun saluation sequence.</string>
+    <string name="shortDescription9">They are often used by runners and other athletes to improve running from as well as lower body speed.</string>
+    <string name="shortDescription10">Learning how to do lunges correctly can help get your quadriceps, hamstrings, buttocks and hips into shape.</string>
+    <string name="shortDescription11">Athletic performance in sports involving torso rotation, such as tennis,hockeyand baseball.</string>
+    <string name="shortDescription12">A side plank modifies the stretch just enough to strengthen your entire core in additon to your obliques and rectus abdominis.</string>
+    <string name="title_activity_ex_description">ExDescription</string>
+    <string name="title_activity_exercise">Exercise</string>
+    <string name="title_activity_exercise_complete">ExerciseComplete</string>
+    <string name="exName01">JUMPING JACKS</string>
+    <string name="exName02">WALL SIT</string>
+    <string name="exName03">PUSH-UP</string>
+    <string name="exName04">ABDOMINAL CRUNCHES</string>
+    <string name="exName05">STEP-UP ONTO CHAIR</string>
+    <string name="exName06">SQUATS</string>
+    <string name="exName07">TRICEPS DIP ON CHAIR</string>
+    <string name="exName08">PLANKS</string>
+    <string name="exName09">HIGH KNEES RUNNING</string>
+    <string name="exName010">LUNGES</string>
+    <string name="exName011">PUSH-UP AND ROTATION</string>
+    <string name="exName012">SIDE PLANKS</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_voice_over">VoiceOver</string>
+    <string name="title_activity_logs">Logs</string>
+
+</resources>

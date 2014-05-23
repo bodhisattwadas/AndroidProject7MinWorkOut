@@ -1,0 +1,115 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="home_screen_text_view">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/round_text</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="home_screen_text_view_small">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/round_text</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <style name="large_home_screen_text_view">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">125dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@drawable/round_text</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="xlarge_home_screen_text_view">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@drawable/round_text</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    
+    <style name="normal_list_view_image">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    <style name="normal_list_view_short_description">
+        <item name="android:layout_width">223dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/deep_green_header_footer</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="normal_linear_layout_button_style">
+        <item name="android:layout_width">223dp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="large_linear_layout_button_style">
+        <item name="android:layout_width">223dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="xlarge_linear_layout_button_style">
+        <item name="android:layout_width">223dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    
+    <style name="settings_table_row_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+        
+    </style>
+
+</resources>
