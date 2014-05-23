@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(getApplicationContext(),VoiceOver.class));
+				//startActivity(new Intent(getApplicationContext(),VoiceOver.class));
 				
 			}
 		});
@@ -52,8 +52,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(getApplicationContext(),Logs.class);
-				startActivity(intent);
+				//Intent intent = new Intent(getApplicationContext(),Logs.class);
+				//startActivity(intent);
 				
 			}
 		});
