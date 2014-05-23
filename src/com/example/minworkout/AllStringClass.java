@@ -14,6 +14,7 @@ public class AllStringClass {
 		"PLANKS","HIGH KNEES RUNNING","LUNGES","PUSH-UP AND ROTATION","SIDE PLANKS"
 		
 	};
+	private final String testString = "hello everybody, this is for git test only";
 	
 	
 
